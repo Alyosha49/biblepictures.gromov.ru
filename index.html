@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <title>Gromov Bible</title>
     <style>
+        body {
+            background: rgb(11, 185, 11);
+        }
         #button {
-        position: fixed;
-        margin: 11px 10px;
+        position:fixed;
+        margin: 1px 10px;
         padding: 10px;
         background-color:white;
         width: 80px;
@@ -18,13 +21,80 @@
         padding: 10px 10px;
         }
         #heading {
-            margin-top:none;
-        height: 100px;
+        height: 70px;
         background-color:rgb(11, 185, 11);
+        }
+        #about {
+            text-decoration: none;
+        }
+        #button:hover {
+            position:fixed;
+            margin: 1px 10px;
+            padding: 10px;
+            background-color:white;
+            width: 80px;
+            height: 20px;
+            border-radius: 20px;
+            text-align: center;
+            color: rgb(11, 185, 11);
+            font-family: sans-serif;
+            padding: 10px 10px;
+            font-weight:bold;
+            box-shadow: 0px 0px 0px 3px white;
+            font-size: 18px;
+        }
+        #button:active {
+            position:fixed;
+            margin: 1px 10px;
+            padding: 10px;
+            background-color:white;
+            width: 80px;
+            height: 20px;
+            border-radius: 20px;
+            text-align: center;
+            color: rgb(11, 185, 11);
+            font-family: sans-serif;
+            padding: 10px 10px;
+            font-weight:bold;
+            box-shadow: 0px 0px 0px 2px white;
+            font-size: 17px;
+        }
+        #headingtxt {
+            text-align: center;
+            font-family: sans-serif;
+            color: white;
+        }
+        #mainzone {
+            background-color: white;
+            width: 1350px;
+            padding: 2px;
+            font-family: sans-serif;
+        }
+        #onePhoto {
+            width: 282px;
+            background: whitesmoke;
+            border: 2px solid lightgray
+        }
+        #twoPhoto {
+            position: absolute;
+            width: 338px;
+            background: lime;
+            border: 2px solid limegreen;
+        }
+        button {
+            padding: 5px;
+        }
+        img {
+            padding: 5px
         }
     </style>
 </head>
 <body>
-    <div id = "heading"><div id = "button">Обо мне</div></div>
+    <div id = "heading"><a href = "about.gromov.ru" id="about"><div id = "button">Обо мне</div></a>
+      </div>
+      <h1 id ="headingtxt">Bible Photos</h1>
+      <div id = "mainzone"><h1>Описание</h1><p>На этой странице я размещаю фотографии со стихами из Библии.</p><div id = "onePhoto">
+    <h2>1. Иоанна 3:16 <a href = "Иоанна 3 16.jpg" download><button>Скачать</button></a></h2><br><img width = "270" height = "350" src = "Иоанна 3 16.jpg"></div><div id = "twoPhoto">
+            <h2>2. 2Пар 16:9 <a href = "2Пар 16 9.jpg" download><button>Скачать</button></a></h2><br><img width = "320" height = "350" src = "2Пар 16 9.jpg"></div></div>
 </body>
 </html>
